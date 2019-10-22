@@ -1,5 +1,8 @@
 # babel-plugin-logfunctionname
 A babel plugin to insert a log in function to show the function name
+
+if you join in a large project but with no document, this plugin maybe could help you;
+
 ## In
 ```javascript
 const functionName = function () {
