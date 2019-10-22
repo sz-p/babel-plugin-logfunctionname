@@ -1,0 +1,38 @@
+{
+  "name": "babel-plugin-logfunctionname",
+  "version": "0.0.1",
+  "description": "A babel plugin to insert a log in function to show the function name",
+  "main": "lib/index.js",
+  "author": "sz-p <sz_p@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/sz-p/babel-plugin-logfunctionname",
+  "bugs": "https://github.com/sz-p/babel-plugin-logfunctionname/issues",
+  "dependencies": {},
+  "keywords": [
+    "node",
+    "babel-plugin",
+    "log",
+    "function",
+    "name"
+  ],
+  "files": [
+    "lib",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sz-p/babel-plugin-logfunctionname.git"
+  },
+  "scripts": {
+    "transform": "node ./test/transform.js",
+    "runTransformed":"node ./test/transformed.js",
+    "runSource":"node ./test/source.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6"
+  }
+}
