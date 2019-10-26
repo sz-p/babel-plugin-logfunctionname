@@ -18,18 +18,34 @@ var arrowFunction = function arrowFunction() {
   console.log("function_working:arrowFunction");
 };
 
-var ClassFunction =
+var ClassFunction = function ClassFunction(name, value) {
+  console.log("function_working:ClassFunction");
+  this.name = name;
+  this.value = value;
+
+  this.getName = function () {
+    console.log("function_working:getName");
+    return this.name;
+  };
+
+  this.getValue = function () {
+    console.log("function_working:getValue");
+    return this.value;
+  };
+};
+
+var Class =
 /*#__PURE__*/
 function () {
-  function ClassFunction(name) {
-    console.log("function_working:ClassFunction");
+  function Class(name) {
+    console.log("function_working:Class");
 
-    _classCallCheck(this, ClassFunction);
+    _classCallCheck(this, Class);
 
     this.name = name;
   }
 
-  _createClass(ClassFunction, [{
+  _createClass(Class, [{
     key: "seyHello",
     value: function seyHello() {
       console.log("function_working:seyHello");
@@ -37,11 +53,11 @@ function () {
     }
   }]);
 
-  return ClassFunction;
+  return Class;
 }();
 
-var classFunctionItem = new ClassFunction('sz-p');
+var classItem = new Class('sz-p');
 functionName();
 functionHere();
 arrowFunction();
-classFunctionItem.seyHello();
+classItem.seyHello();

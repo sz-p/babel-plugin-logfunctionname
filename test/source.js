@@ -7,7 +7,18 @@ function functionHere() {
 const arrowFunction = () => {
 
 }
-class ClassFunction {
+const ClassFunction = function (name, value) {
+  this.name = name;
+  this.value = value;
+  this.getName = function () {
+    return this.name;
+  }
+  this.getValue = function () {
+    return this.value;
+  }
+}
+
+class Class {
   constructor(name) {
     this.name = name;
   }
@@ -15,10 +26,10 @@ class ClassFunction {
     console.log(`hello ${this.name}`)
   }
 }
-let classFunctionItem = new ClassFunction('sz-p')
+let classItem = new Class('sz-p')
 
 functionName();
 functionHere();
 arrowFunction();
-classFunctionItem.seyHello();
+classItem.seyHello();
 
