@@ -15,7 +15,7 @@ All notable changes to this project will be documented in this file. See [standa
 - [AssignmentExpression] log functionName in AssignmentExpression example this.getName = function () {}
 
 <a name="0.0.3"></a>
-## [0.0.3]() (2019-10-28)
+## [0.0.3](https://github.com/sz-p/babel-plugin-logfunctionname/commit/5b1e0ae48f553032b4db9a5dbf737780150b29e4) (2019-10-28)
 
 ### Features
 - [options] add some options to easy use

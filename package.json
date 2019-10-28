@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-logfunctionname",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A babel plugin to insert a log in function to show the function name",
   "main": "lib/index.js",
   "author": "sz-p <sz_p@outlook.com>",
