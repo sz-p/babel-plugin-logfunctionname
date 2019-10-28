@@ -109,10 +109,18 @@ require('babel-core').transform('code', {
 });
 ```
 
+## Options
+
+|Key|Type|Description|Example|
+|:-:|:-:|:-:|:-:|
+|enable|boolean|enable or disable plugin|`false`|
+|functionWorkingHint|string|The string before functionName|`function_working:`|
+|excludeFunctionsName|array|exclude functions by function name|`['doNotLogThis', /^excludeByRegExp/]`|
+|excludeFilesName|array|exclude functions by file name|`['subCode', /node_modules/]`|
+
 ## test
 ```sh
 $ yarn install
 $ yarn transform
-$ yarn runSource
-$ yarn runTransformed
+$ yarn runOut
 ```

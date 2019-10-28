@@ -27,8 +27,8 @@
   },
   "scripts": {
     "transform": "node ./test/transform.js",
-    "runTransformed":"node ./test/transformed.js",
-    "runSource":"node ./test/source.js"
+    "runOut": "node ./test/out/index.js",
+    "runIn": "node ./test/in/index.js"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
